@@ -7,6 +7,7 @@ import MemberLayout from "./layouts/member";
 import MemberIndexPage from "./pages/member/index";
 import MemberClubsIdLayout from "./layouts/member/clubs/_id";
 import MemberClubsIdIndexPage from "./pages/member/clubs/_id/index";
+import MemberEditPage from "./pages/member/edit";
 
 Vue.use(VueRouter);
 
@@ -26,6 +27,10 @@ const routes = [
       {
         path: "",
         component: MemberIndexPage
+      },
+      {
+        path: "edit",
+        component: MemberEditPage
       }
     ]
   },
