@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 
 import IndexPage from "./pages/index";
+import LoginPage from "./pages/login";
 
 Vue.use(VueRouter);
 
@@ -9,6 +10,10 @@ const routes = [
   {
     path: "/",
     component: IndexPage
+  },
+  {
+    path: "/login",
+    component: LoginPage
   }
 ];
 
