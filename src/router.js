@@ -9,6 +9,7 @@ import MemberClubsIdLayout from "./layouts/member/clubs/_id";
 import MemberClubsIdIndexPage from "./pages/member/clubs/_id/index";
 import MemberEditPage from "./pages/member/edit";
 import MemberClubsIdEditPage from "./pages/member/clubs/_id/edit";
+import MemberClubsIdMembersIndexPage from "./pages/member/clubs/_id/members/index";
 import MemberClubsNewPage from "./pages/member/clubs/new";
 
 Vue.use(VueRouter);
@@ -51,6 +52,10 @@ const routes = [
       {
         path: "edit",
         component: MemberClubsIdEditPage
+      },
+      {
+        path: "members",
+        component: MemberClubsIdMembersIndexPage
       }
     ]
   }
