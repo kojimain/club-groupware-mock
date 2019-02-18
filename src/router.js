@@ -5,6 +5,8 @@ import IndexPage from "./pages/index";
 import LoginPage from "./pages/login";
 import MemberLayout from "./layouts/member";
 import MemberIndexPage from "./pages/member/index";
+import MemberClubsIdLayout from "./layouts/member/clubs/_id";
+import MemberClubsIdIndexPage from "./pages/member/clubs/_id/index";
 
 Vue.use(VueRouter);
 
@@ -24,6 +26,16 @@ const routes = [
       {
         path: "",
         component: MemberIndexPage
+      }
+    ]
+  },
+  {
+    path: "/member/clubs/:club_id",
+    component: MemberClubsIdLayout,
+    children: [
+      {
+        path: "",
+        component: MemberClubsIdIndexPage
       }
     ]
   }
