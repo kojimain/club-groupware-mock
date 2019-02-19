@@ -2,10 +2,10 @@
   <header>
     <nav class="navbar is-fixed-top">
       <div class="navbar-brand">
-        <a class="navbar-item" href="/">
+        <router-link to="/" class="navbar-item">
           <img src="/img/logo.png" />
           <span>ClubGroupware(仮)</span>
-        </a>
+        </router-link>
         <!-- <span class="navbar-burger burger" data-target="navbarMenu">
         <span></span>
         <span></span>
@@ -18,14 +18,14 @@
           <div class="navbar-item">
             <div class="field is-grouped is-grouped-right">
               <p class="control">
-                <a href="/signup" class="button">
+                <router-link to="/signup" class="button">
                   新規登録
-                </a>
+                </router-link>
               </p>
               <p class="control">
-                <a href="/login" class="button is-info">
+                <router-link to="/login" class="button is-info">
                   ログイン
-                </a>
+                </router-link>
               </p>
             </div>
           </div>

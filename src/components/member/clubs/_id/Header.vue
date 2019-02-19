@@ -2,29 +2,29 @@
   <Header>
     <div slot="navbar-start" class="navbar-start">
       <div class="navbar-item has-dropdown is-hoverable">
-        <a href="/member/clubs/123" class="navbar-link">
+        <router-link to="/member/clubs/123" class="navbar-link">
           サンプルクラブ1
-        </a>
+        </router-link>
         <div class="navbar-dropdown">
-          <a href="/member/clubs/123" class="navbar-item is-active">
+          <router-link to="/member/clubs/123" class="navbar-item is-active">
             サンプルクラブ1
-          </a>
-          <a href="/member/clubs/123" class="navbar-item">
+          </router-link>
+          <router-link to="/member/clubs/123" class="navbar-item">
             サンプルクラブ2
-          </a>
-          <a href="/member/clubs/123" class="navbar-item">
+          </router-link>
+          <router-link to="/member/clubs/123" class="navbar-item">
             サンプルクラブ3
-          </a>
-          <a href="/member/clubs/new" class="navbar-item">
+          </router-link>
+          <router-link to="/member/clubs/new" class="navbar-item">
             新規クラブ作成
-          </a>
+          </router-link>
           <hr class="navbar-divider" />
-          <a href="/member/clubs/123/members" class="navbar-item">
+          <router-link to="/member/clubs/123/members" class="navbar-item">
             メンバー一覧
-          </a>
-          <a href="/member/clubs/123/edit" class="navbar-item">
+          </router-link>
+          <router-link to="/member/clubs/123/edit" class="navbar-item">
             クラブ編集
-          </a>
+          </router-link>
         </div>
       </div>
     </div>

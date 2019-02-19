@@ -10,15 +10,15 @@
             <div class="card-content">
               <div class="content is-clearfix">
                 <div class="buttons is-pulled-right">
-                  <a
+                  <router-link
+                    to="/member/clubs/123/events/new"
                     class="button is-primary"
-                    href="/member/clubs/123/events/new"
                   >
                     <span class="icon is-medium">
                       <i class="fas fa-envelope"></i>
                     </span>
                     <span>新規イベント作成</span>
-                  </a>
+                  </router-link>
                 </div>
               </div>
               <div class="list">

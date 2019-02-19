@@ -10,11 +10,11 @@
             <i class="fas fa-info-circle"></i>
           </span>
         </a>
-        <a class="button" href="/member/clubs/123/events/123/edit">
+        <router-link to="/member/clubs/123/events/123/edit" class="button">
           <span class="icon is-small">
             <i class="fas fa-pen"></i>
           </span>
-        </a>
+        </router-link>
       </div>
       <div class="buttons is-pulled-right">
         <a

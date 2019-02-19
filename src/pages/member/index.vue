@@ -33,13 +33,13 @@
           <div class="content">
             <div class="columns is-centered is-multiline">
               <div v-for="club in clubs" :key="club.id" class="column is-4">
-                <a href="/member/clubs/123">
+                <router-link to="/member/clubs/123">
                   <div class="card">
                     <div class="card-content">
                       {{ club.name }}
                     </div>
                   </div>
-                </a>
+                </router-link>
               </div>
             </div>
           </div>
