@@ -1,9 +1,9 @@
 <template>
   <div class="container">
     <section class="section">
-      <h2 class="subtitle">新規イベント作成</h2>
+      <h2 class="subtitle">イベント編集</h2>
       <div class="box">
-        <form action="/member/clubs/123">
+        <form action="/clubs/123">
           <div class="field">
             <p class="control">
               <label class="label">タイトル</label>
@@ -24,7 +24,7 @@
           <hr />
           <div class="field is-grouped">
             <div class="control">
-              <button class="button is-primary">作成</button>
+              <button class="button is-primary">更新</button>
             </div>
           </div>
         </form>

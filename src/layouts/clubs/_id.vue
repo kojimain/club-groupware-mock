@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Header from "@/components/member/clubs/_id/Header";
+import Header from "@/components/clubs/_id/Header";
 import Footer from "@/components/Footer";
 
 export default {

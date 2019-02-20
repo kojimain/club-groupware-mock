@@ -11,7 +11,7 @@
               <div class="content is-clearfix">
                 <div class="buttons is-pulled-right">
                   <router-link
-                    to="/member/clubs/123/events/new"
+                    to="/clubs/123/events/new"
                     class="button is-primary"
                   >
                     <span class="icon is-medium">
@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import Event from "@/components/member/clubs/_id/index/Event";
+import Event from "@/components/clubs/_id/index/Event";
 
 export default {
   components: {

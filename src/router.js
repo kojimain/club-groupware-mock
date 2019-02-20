@@ -1,71 +1,66 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-import IndexPage from "./pages/index";
 import LoginPage from "./pages/login";
-import MemberLayout from "./layouts/member";
-import MemberIndexPage from "./pages/member/index";
-import MemberClubsIdLayout from "./layouts/member/clubs/_id";
-import MemberClubsIdIndexPage from "./pages/member/clubs/_id/index";
-import MemberEditPage from "./pages/member/edit";
-import MemberClubsIdEditPage from "./pages/member/clubs/_id/edit";
-import MemberClubsIdMembersIndexPage from "./pages/member/clubs/_id/members/index";
-import MemberClubsNewPage from "./pages/member/clubs/new";
-import MemberClubsIdEventsNewPage from "./pages/member/clubs/_id/events/new";
-import MemberClubsIdEventsIdEditPage from "./pages/member/clubs/_id/events/_id/edit";
+import AppLayout from "./layouts/app";
+import IndexPage from "./pages/index";
+import ClubsIdLayout from "./layouts/clubs/_id";
+import ClubsIdIndexPage from "./pages/clubs/_id/index";
+import EditPage from "./pages/edit";
+import ClubsIdEditPage from "./pages/clubs/_id/edit";
+import ClubsIdMembersIndexPage from "./pages/clubs/_id/members/index";
+import ClubsNewPage from "./pages/clubs/new";
+import ClubsIdEventsNewPage from "./pages/clubs/_id/events/new";
+import ClubsIdEventsIdEditPage from "./pages/clubs/_id/events/_id/edit";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    component: IndexPage
-  },
-  {
     path: "/login",
     component: LoginPage
   },
   {
-    path: "/member",
-    component: MemberLayout,
+    path: "/",
+    component: AppLayout,
     children: [
       {
         path: "",
-        component: MemberIndexPage
+        component: IndexPage
       },
       {
         path: "edit",
-        component: MemberEditPage
+        component: EditPage
       },
       {
         path: "clubs/new",
-        component: MemberClubsNewPage
+        component: ClubsNewPage
       }
     ]
   },
   {
-    path: "/member/clubs/:club_id",
-    component: MemberClubsIdLayout,
+    path: "/clubs/:club_id",
+    component: ClubsIdLayout,
     children: [
       {
         path: "",
-        component: MemberClubsIdIndexPage
+        component: ClubsIdIndexPage
       },
       {
         path: "edit",
-        component: MemberClubsIdEditPage
+        component: ClubsIdEditPage
       },
       {
         path: "members",
-        component: MemberClubsIdMembersIndexPage
+        component: ClubsIdMembersIndexPage
       },
       {
         path: "events/new",
-        component: MemberClubsIdEventsNewPage
+        component: ClubsIdEventsNewPage
       },
       {
         path: "events/:event_id/edit",
-        component: MemberClubsIdEventsIdEditPage
+        component: ClubsIdEventsIdEditPage
       }
     ]
   }

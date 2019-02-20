@@ -7,7 +7,7 @@
             <div class="column is-4 is-offset-4">
               <img src="/img/logo.png" width="96" height="96" />
               <div class="box">
-                <form action="/member">
+                <form action="/">
                   <div class="field">
                     <div class="control">
                       <input

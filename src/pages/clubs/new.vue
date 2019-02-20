@@ -3,7 +3,7 @@
     <section class="section">
       <h2 class="subtitle">新規クラブ作成</h2>
       <div class="box">
-        <form action="/member/clubs/123">
+        <form action="/clubs/123">
           <div class="field">
             <p class="control">
               <label class="label">クラブ名</label>

@@ -2,7 +2,7 @@
   <header>
     <nav class="navbar is-fixed-top">
       <div class="navbar-brand">
-        <router-link to="/member" class="navbar-item">
+        <router-link to="/" class="navbar-item">
           <img src="/img/logo.png" />
           <span>ClubGroupware(仮)</span>
         </router-link>
@@ -30,13 +30,13 @@
               サンプルメンバー1
             </a>
             <div class="navbar-dropdown">
-              <router-link to="/member/edit" class="navbar-item">
+              <router-link to="/edit" class="navbar-item">
                 プロフィール編集
               </router-link>
               <hr class="navbar-divider" />
-              <router-link to="/" class="navbar-item">
+              <a href="/login" class="navbar-item">
                 ログアウト
-              </router-link>
+              </a>
             </div>
           </div>
         </div>

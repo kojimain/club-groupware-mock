@@ -10,7 +10,7 @@
             <i class="fas fa-info-circle"></i>
           </span>
         </a>
-        <router-link to="/member/clubs/123/events/123/edit" class="button">
+        <router-link to="/clubs/123/events/123/edit" class="button">
           <span class="icon is-small">
             <i class="fas fa-pen"></i>
           </span>
@@ -54,7 +54,7 @@
 </template>
 
 <script>
-import Modal from "@/components/member/Modal";
+import Modal from "@/components/Modal";
 
 export default {
   props: {
