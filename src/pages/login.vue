@@ -39,7 +39,7 @@
                 </form>
               </div>
               <p class="has-text-grey">
-                <router-link to="/signup">新規登録</router-link>
+                <router-link to="/register">新規登録</router-link>
               </p>
               <p class="has-text-grey">
                 <router-link to="/forget">パスワードをお忘れの方</router-link>
