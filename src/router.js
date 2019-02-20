@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 
 import LoginPage from "./pages/login";
 import RegisterPage from "./pages/register";
+import ForgetPage from "./pages/forget";
 import AppLayout from "./layouts/app";
 import IndexPage from "./pages/index";
 import ClubsIdLayout from "./layouts/clubs/_id";
@@ -24,6 +25,10 @@ const routes = [
   {
     path: "/register",
     component: RegisterPage
+  },
+  {
+    path: "/forget",
+    component: ForgetPage
   },
   {
     path: "/",
